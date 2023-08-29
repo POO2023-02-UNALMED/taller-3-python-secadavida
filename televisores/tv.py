@@ -48,11 +48,11 @@ class TV:
 		return self._control
 
 	def setMarca(self, marca):
-		if (self._estado and (marca >= 1 and marca <= 120)):
-			self._marca = marca
+		self._marca = marca
 
 	def setCanal(self, canal):
-		self._canal = canal
+		if (self._estado and (canal >= 1 and canal <= 120)):
+			self._canal = canal
 	
 	def setPrecio(self, precio):
 		self._precio = precio
@@ -63,5 +63,3 @@ class TV:
 
 	def setControl(self, control):
 		self._control = control
-
-
