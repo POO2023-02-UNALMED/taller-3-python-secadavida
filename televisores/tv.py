@@ -14,6 +14,9 @@ class TV:
 	def setNumTV(numTV):
 		TV.numTV = numTV
 
+	def getNumTV():
+		return TV.numTV
+
 	def canalUp(self):
 		self.setCanal(self._canal + 1)
 
