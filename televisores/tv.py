@@ -48,7 +48,7 @@ class TV:
 		return self._control
 
 	def setMarca(self, marca):
-		if (self._estado and self._marca >= 1 and self._marca <= 120):
+		if (self._estado and (self._marca >= 1 and self._marca <= 120)):
 			self._marca = marca
 
 	def setCanal(self, canal):
