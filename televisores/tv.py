@@ -9,10 +9,10 @@ class TV:
 		self._precio = 500
 		self._volumen = 1
 		
-		TV.numTV += 1
+		TV.numTV = TV.numTV + 1
 
-	def setNumTv(numTv):
-		TV.numTV = numTv
+	def setNumTV(numTV):
+		TV.numTV = numTV
 
 	def canalUp(self):
 		self.setCanal(self._canal + 1)
